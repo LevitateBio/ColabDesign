@@ -23,7 +23,7 @@ steps:
   - name: release server image -- branch
     image: plugins/gcr
     settings:
-      repo: cyrus-containers/proteinmpnn
+      repo: cyrus-containers/colabdesign
       tags:
         - ${DRONE_COMMIT_BRANCH}
       debug: true
@@ -36,7 +36,7 @@ steps:
   - name: release server image -- tag
     image: plugins/gcr
     settings:
-      repo: cyrus-containers/proteinmpnn
+      repo: cyrus-containers/colabdesign
       tags:
         - ${DRONE_TAG}
       debug: true
